@@ -17,13 +17,11 @@ body {
     background-color: var(--color-secondary);
     font-family: 'Poppins';
     color: #282828;
+    height: 300vh;
 }
 
 .header {
-    padding: 1.50rem 3rem 1.50rem 2.75rem;
     color: var(--color-primary);
-    display: flex;
-    justify-content: space-between;
 }
 
 .header__h1 {
@@ -31,7 +29,13 @@ body {
 }
 
 .nav {
-    height: 1.563rem;
+    width: 100%;
+    padding: 1.50rem 3rem 1.50rem 2.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .nav__ul {
@@ -78,6 +82,9 @@ body {
 
 .activeheader__div--third {
     transform: rotate(-45deg) translate(-.25rem, .125rem);
+}
+
+.header__hero {
 }
 
 @media screen and (min-width: 768px) {
